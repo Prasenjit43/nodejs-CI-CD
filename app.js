@@ -5,7 +5,13 @@ app.use(express.json())
 
 app.get("/",(req,resp) =>{
     resp.json({
-        message : "Called Get Route"
+        message : "Called Get Route modified"
+    })
+})
+
+app.get("/test",(req,resp) =>{
+    resp.json({
+        message : "Called Test Route"
     })
 })
 
